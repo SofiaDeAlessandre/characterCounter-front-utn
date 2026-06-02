@@ -15,7 +15,6 @@
 
   <!-- Body -->
   <body>
-
     <!-- Header -->
     <header>
       <div class="logo-title">
@@ -28,7 +27,6 @@
 
     <!-- Main -->
     <main>
-
       <!-- Hero -->
       <section class="hero">
         <h2 class="hero-title">
@@ -81,7 +79,11 @@
       </section>
       <!-- End Cards -->
 
-       <!--Letter Density-->
+      <!--Letter Density-->
+      <!-- Investigación -> <progress>: elemento nativo HTML para barras de progreso.
+  value= cantidad actual, max= valor máximo posible.
+  Se estiliza con pseudo-elementos por navegador (ver en 'styles.css') -->
+
       <section class="density">
         <h3 class="density-title">Letter Density</h3>
 
@@ -115,10 +117,12 @@
           <span class="density-count">21 (8.43%)</span>
         </div>
 
-        <button class="see-more">See more ∨</button>
+        <button class="see-more">
+          <span>See more</span>
+          <span class="see-more-icon">▼</span>
+        </button>
       </section>
       <!--End Letter Density-->
-      
     </main>
     <!--End Main-->
   </body>
