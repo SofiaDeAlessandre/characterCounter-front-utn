@@ -11,8 +11,8 @@
   --color-tertiary: #ff4d8d;
   --color-bg: #12131a;
   --color-border: #2a2d3a;
-    
-   /* Accent */
+
+  /* Accent */
   --color-bar: #d19bff;
 
   /* Text */
@@ -21,10 +21,10 @@
 
   /* Spacing */
   --radius-sm: 8px;
-   --radius: 12px;
+  --radius: 12px;
 }
 
-/* Body */ 
+/* Body */
 
 body {
   background-color: var(--color-bg);
@@ -114,7 +114,9 @@ main {
   line-height: 1.6;
   resize: vertical;
   outline: none;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
 }
 
 .hero-textarea::placeholder {
@@ -163,7 +165,7 @@ main {
   color: var(--text-secondary);
 }
 
-/* Cards */ 
+/* Cards */
 
 .cards {
   display: flex;
@@ -173,13 +175,16 @@ main {
 .card {
   flex: 1;
   border-radius: var(--radius);
-  padding: 1.2rem 1.4rem;
+  padding: 1.4rem 1.4rem 1.2rem 1.4rem;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   gap: 0.3rem;
   position: relative;
   overflow: hidden;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
   min-height: 110px;
 }
 
@@ -193,7 +198,7 @@ main {
   right: 0;
   top: 0;
   height: 100%;
-  width: auto;
+  width: 100%;
   object-fit: cover;
   pointer-events: none;
 }
@@ -219,7 +224,7 @@ main {
 /* Responsive cards */
 
 @media (max-width: 600px) {
-  .stats {
+  .cards {
     flex-direction: column;
   }
 }
