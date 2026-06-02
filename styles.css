@@ -331,10 +331,34 @@ main {
   color: var(--text-primary);
 }
 
-/* Responsive cards */
+/* Responsive mobile */
 
 @media (max-width: 600px) {
   .cards {
     flex-direction: column;
   }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  main {
+    padding: 1.5rem 1rem;
+  }
+
+  header {
+    padding: 0.9rem 1rem;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .density-count {
+    width: 75px;
+    font-size: 0.75rem;
+  }
 }
+
