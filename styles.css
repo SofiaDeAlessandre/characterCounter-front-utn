@@ -20,11 +20,15 @@
   --radius-sm: 8px;
 }
 
+/* Body */ 
+
 body {
   background-color: var(--color-bg);
   min-height: 100vh;
   font-family: "Space Grotesk", sans-serif;
 }
+
+/* Header */
 
 header {
   display: flex;
@@ -33,7 +37,8 @@ header {
   padding: 1rem 2rem;
   background-color: var(--color-bg);
 }
-.logo-tittle {
+
+.logo-title {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -64,3 +69,7 @@ h1 {
 .header-button:hover {
   border-color: var(--text-secondary);
 }
+
+/*Main*/
+
+/*Hero*/
